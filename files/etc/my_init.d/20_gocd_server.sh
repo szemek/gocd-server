@@ -1,3 +1,3 @@
 #!/bin/bash
 set -e
-/etc/init.d/go-server start
+service go-server start
