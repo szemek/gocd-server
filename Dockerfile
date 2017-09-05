@@ -9,7 +9,7 @@ RUN curl https://download.gocd.io/GOCD-GPG-KEY.asc | apt-key add -
 RUN apt update
 RUN apt install -y openjdk-8-jre-headless
 RUN apt install -y go-server
-RUN apt install -y git
+RUN apt install -y git wget htop ncdu tree
 RUN su - go -c 'mkdir -p /var/go/.ssh'
 RUN su - go -c 'ssh-keyscan github.com > /var/go/.ssh/known_hosts'
 
